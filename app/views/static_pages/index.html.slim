@@ -1,10 +1,45 @@
-doctype html
-html
-  head
-    title Paul Huot
-
-  body
-    .nav.navbar-fixed-top.navbar-brand#navbar
-		  ul.nav.nav-pills
-		    li= link_to "Home", root_path
-		    li= link_to "About us", root_path
+body
+  /! Full Width Image Header
+  header.header-image
+    .headline
+      .container
+        h1 Paul Huot
+        h2 Full Stack Web Developer
+        h3 Projects
+  /! Page Content
+  .container
+    hr.featurette-divider/
+    /! First Featurette
+    #about.featurette
+      img.featurette-image.img-circle.img-responsive.pull-right src="http://placehold.it/500x500" /
+      h2.featurette-heading
+        | My move...
+        span.text-muted an app to help you with your move.
+      p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    hr.featurette-divider/
+    /! Second Featurette
+    #services.featurette
+      img.featurette-image.img-circle.img-responsive.pull-left src="http://placehold.it/500x500" /
+      h2.featurette-heading
+        | The Veterans Project
+        span.text-muted An app to help recently seperated veterans.
+      p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    hr.featurette-divider/
+    /! Third Featurette
+    #contact.featurette
+      img.featurette-image.img-circle.img-responsive.pull-right src="http://placehold.it/500x500" /
+      h2.featurette-heading
+        | Tic Tac Toe
+        span.text-muted A game to pass time with your friends.
+      p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    hr.featurette-divider/
+    /! Footer
+    footer
+      .row
+        .col-lg-12
+          p paul@gmail.com
+  /! /.container
+  /! jQuery
+  script src="js/jquery.js" 
+  /! Bootstrap Core JavaScript
+  script src="js/bootstrap.min.js" 
